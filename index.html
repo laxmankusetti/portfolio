@@ -4,49 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laxman's portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <main>
+    <div class="page">
+        <div class="profile-pic">
+            <img src="./images/profile.png" alt="profile-pic">
+        </div>
         <div class="intro">
-            <div class="about-me">
-                <h1>Nice to meet you!<br> i'm laxman kusetti</h1>
-                <p class="brief">
-                    A self-taught frontend developer with a strong passion for creating 
-                    interactive and user-friendly web experiences.With no formal education in the field, my path has 
-                    been defined by sheer determination and a commitment to mastering the latest web technologies. 
-                    What began as a personal project soon evolved into a professional endeavor as I started working on 
-                    real-world web development projects
-                </p>
+            <h1>I'm @ <br> <span class="big-text">CREATIVE </span><br><span class="highlight-text"> Frontend</span> <br> <span class="big-text">DEVELOPER </span></h1>
+            <p class="brief">
+                My goal is to become a skilled frontend developer. I will continue to strive for that. I will continue to make a 
+                difference in this field. For that I am constantly learning new skills. I will keep giving my best till the best output comes. 
+            </p>
+            <div class="nav-links-container">
+                <a class="icon-link icon-link-hover" href="./about.html">
+                    About Me
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"class="bi" aria-hidden="true"><style>svg{fill:#acb1b9}</style><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    <use xlink:href="#arrow-right"></use></svg>
+                </a>
+                <a class="icon-link icon-link-hover" href="./projects.html">
+                    My Projects
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"class="bi" aria-hidden="true"><style>svg{fill:#acb1b9}</style><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    <use xlink:href="#arrow-right"></use></svg>
+                </a>
             </div>
-            <div class="profile"></div>
         </div>
-        <div class="skills-container">
-            <h2 class="skill">HTML <span class="experience">1 year</span></h2>
-            <h2 class="skill">CSS <span class="experience">1 year</span></h2>
-            <h2 class="skill">Javascript <span class="experience">1 year</span></h2>
-            <h2 class="skill">React <span class="experience">1 year</span></h2>
-            <h2 class="skill">Redux <span class="experience">1 year</span></h2>
-            <h2 class="skill">Tailswind <span class="experience">1 year</span></h2>
-            <h2 class="skill">Bootstrap <span class="experience">1 year</span></h2>
-        </div>
-        <h2 class="projects-head">Projects</h2>
-        <div class="projects-container">
-            <a href="https://laxmankusetti.github.io/advice-generator/"><img src="./images/advice-generation-app/desktop-preview.jpg" alt="advice-generation-app"></a>
-            <a href="https://laxmankusetti.github.io/find-your-age/"><img src="./images/age-calculator-app/desktop-design.jpg" alt="age-calculator-app"></a>
-            <a href="https://laxmankusetti.github.io/e-commerce-product-page/"><img src="./images/e-commerce/desktop-design.jpg" alt="e-commerce"></a>
-            <a href="https://laxmankusetti.github.io/easy-bank/"><img src="./images/easy-bank/desktop-design.jpg" alt="easy-bank"></a>
-            <a href="https://laxmankusetti.github.io/illustration-master/"><img src="./images/illustration-master/desktop-design.jpg" alt="illustration-master"></a>
-            <a href="https://laxmankusetti.github.io/interactive-card/"><img src="./images/interactive-card/desktop-design.jpg" alt="interactive-card"></a>
-            <a href="https://laxmankusetti.github.io/news-letter/"><img src="./images/news-letter/desktop-design.jpg" alt="news-letter"></a>
-            <a href="https://laxmankusetti.github.io/news-page/"><img src="./images/news-page/desktop-design.jpg" alt="news-page"></a>
-            <a href=""><img src="./images/page-intro/desktop-design.jpg" alt="page-intro"></a>
-            <a href="https://laxmankusetti.github.io/room-home-page/"><img src="./images/room-home-page/desktop-design-slide-1.jpg" alt="room-home-page"></a>
-            <a href="https://laxmankusetti.github.io/testimonials/"><img src="./images/testimonials/desktop-design.jpg" alt="testimonials"></a>
-            <a href="https://laxmankusetti.github.io/time-tracking-app/"><img src="./images/time-tracking-app/desktop-design.jpg" alt="time-tracking-app"></a>
-            <a href="https://laxmankusetti.github.io/bill-splitter-app/"><img src="./images/tip-calculator/desktop-preview.jpg" alt="tip-calculator"></a>
-        </div>
-    </main>
+    </div>
 </body>
 </html>

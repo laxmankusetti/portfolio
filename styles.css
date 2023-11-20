@@ -2,140 +2,387 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 body{
     width: 100vw;
-    font-family: sans-serif;
+    height: 100vh;
+    background-color: black;
 }
 
-body main{
+.page{
     width: 100%;
-}
-
-.intro{
-    width: 90%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
-    margin: auto;
-    border-bottom: 2px solid gray;
-    height: 60vh;
-}
-
-.intro .about-me{
-    width: 70%;
-}
-.intro .profile{
-    width: 20%;
-    height: 50vh;
-    background-image: url('./images/profile.png');
-    background-size: cover;
-}
-
-.about-me h1{
-    font-size: 3em;
-    margin: 50px auto;
-}
-
-.about-me .brief{
-    font-size: 0.9em;
-    line-height: 20px;
-    color: hsla(0, 0%, 0%, 0.7);
-}
-
-.logo{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-.skills-container{
-    width: 60%;
-    margin: 20px auto;
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.skills-container .skill{
-    font-size: 2em;
-    font-family: monospace;
-}
-
-.skills-container .skill .experience{
-    display: block;
-    font-size: 16px;
-    color: gray;
-}
-
-.projects-container{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 25px auto;
-    gap: 35px;
-}
-
-.projects-container a{
-    width: 30%;
-    height: 40vh;
-    border: 2px solid gray;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.projects-container a img{
+.page .profile-pic{
+    width: 30%;
+    height: 75%;
+    background-color: gray;
+    overflow-y: hidden;
+}
+
+.page .profile-pic img{
+    width: 80%;
+    height: 120%;
+    margin-top: 25%;
+}
+
+.page .intro{
+    width: 65%;
+}
+
+.intro h1{
+    color: gray;
+    font-family: sans-serif;
+}
+
+.intro h1 .big-text{
+    font-size: 3em;
+    color: white;
+    text-shadow: 10px 0px 0px gray;
+}
+
+.intro h1 .highlight-text{
+    text-transform: uppercase;
+    letter-spacing: 35px;
+    color: red;
+    margin-left: 50px;
+}
+
+.intro p.brief{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+article h2{
+    color: white;
+    text-align: center;
+}
+
+.laxman{
+    font-size: 2em;
+    text-shadow: 5px 0 0 hsl(213, 68%, 67%);
+    letter-spacing: 25px;
+}
+
+.icon-link{
+    text-decoration: none;
+    color: red;
+}
+
+.accordion-body small{
+    font-weight: 600;
+}
+
+.accordion-body small i{
+    font-size: 2em;
+}
+
+.accordion-item .accordion-header button{
+    font-weight: 700;
+}
+
+.nav-links-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-paper-plane{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#which-accordion{
+    color: rgb(157, 192, 236);
+}
+
+/* .carousel .carousel-inner .carousel-item */
+
+.projects-container{
     width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    gap: 50px;
+}
+
+.projects-container a{
+    display: block;
+    width: 30%;
+    height: 250px;
+}
+
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
+.carousel .carousel-inner{
+    width: 90%;
+    height: 90%;
+    margin: 15px;
+}
+.carousel .carousel-inner .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+.carousel .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.all-projects{
+    width: 75%;
+    height: 60%;
+    margin: 20px auto;
+}
+.all-projects .carousel{
+    width: 100%;
+    height: 100%;
+}
+.all-projects .carousel .carousel-inner{
+    width: 100%;
+    height: 100%;
+    margin: 5% 10%;
+}
+.all-projects .carousel .carousel-inner .carousel-item{
+    width: 80%;
     height: 80%;
 }
-
-.projects-container a img:hover{
-    transform: scale(1.1);
+.all-projects .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 100%;
 }
 
-.projects-head{
-    margin-left: 5%;
+.all-projects .carousel .carousel-indicators button{
+    background-color: white;
+    width: 10px;
+    height: 3px;
+    border-radius: 3px;
 }
 
-@media screen and (max-width:500px){
-    body{
-        margin-left: 30px;
-    }
-    .intro{
-        width: 90%;
-        display: flex;
-        flex-direction: column-reverse;
+.all-projects .carousel .carousel-indicators{
+    width: max-content;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.projects-intro{
+    width: 90%;
+    margin: 20px auto;
+    color: white;
+}
+
+.projects-intro .highlight-projects-head{
+    letter-spacing: 20px;
+    font-size: 2.5em;
+    color: red;
+}
+.projects-intro .highlight-projects-text{
+    color: rgb(254, 69, 69);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.skill{
+    font-weight: 800;
+    font-size: 1.2em;
+    color: hsl(213, 68%, 67%);
+}
+
+@media screen and (min-width:500px) and (max-width:1200px){
+    .page{
+        flex-direction: column;
         justify-content:flex-start;
-        height: 75vh;
-    }
-    
-    .intro .about-me{
-        width: 95%;
-        padding: 10px;
-    }
-    .intro .profile{
-        width: 75%;
-        height: 100%;
-        background-image: url('./images/profile.png');
-        background-size: cover;
-    }
-
-    .about-me h1{
-        font-size: 2em;
-        margin: 20px auto;
-    }
-
-    .skills-container{
-        width: 90%;
-        margin: 20px auto;
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
+        align-items: center;
     }
 
     .projects-container a{
-        width: 90%;
-        height: 40vh;
+        display: block;
+        width: 30%;
+        height: 200px;
     }
 
+    .carousel .carousel-inner{
+        width: 90%;
+        height: 90%;
+        margin: 10px;
+    }
+
+    .projects-container{
+        gap: 30px;
+    }
+
+    .intro h1 .big-text{
+        font-size: 1.75em;
+        color: white;
+        text-shadow: 5px 0px 0px gray;
+    }
+
+    .intro h1 .highlight-text{
+        letter-spacing: 20px;
+        margin-left: 15px;
+    }
+
+    .intro p.brief{
+        color: gray;
+        font-size: 1em;
+    }
+    .nav-links-container{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page .profile-pic{
+        width: 30%;
+        height: 40%;
+        background-color: gray;
+        overflow-y: hidden;
+    }
+    .projects-intro .highlight-projects-head{
+        letter-spacing: 10px;
+        font-size: 3em;
+        color: rgb(250, 7, 11);
+        text-transform: uppercase;
+        text-shadow: 5px 0 0 white;
+    }
+    .projects-intro .highlight-projects-text{
+        color: rgb(250, 7, 11);
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+
+    .projects-intro h2{
+        font-weight: 700;
+    }
+
+    .all-projects .carousel .carousel-indicators button{
+        background-color: white;
+        width: 15px;
+        height: 4px;
+        border-radius: 3px;
+    }
+    
+    .all-projects .carousel .carousel-indicators{
+        margin-top: 0px;
+    }
+
+    .all-projects{
+        width: 85%;
+        height: 50%;
+        margin: 20px auto;
+    }
+
+    .all-projects .carousel .carousel-inner .carousel-item{
+        width: 80%;
+        height: 80%;
+    }
+
+    .page .intro{
+        width: 75%;
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+}
+
+.about-drop-down{
+    margin-top: 100px;
+}
+
+@media screen and (max-width:500px){
+    .page{
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .page .intro{
+        width: 95%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .page .profile-pic{
+        width: 50%;
+        height: 25%;
+        border-radius: 50%;
+    }
+
+    .intro h1 .big-text{
+        font-size: 1.75em;
+        text-shadow: 5px 0 0 gray;
+    }
+
+    .nav-links-container{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .intro h1 .highlight-text{
+        letter-spacing: 20px;
+        margin-left: 10px;
+    }
+
+    .projects-container{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px auto;
+        gap: 20px;
+    }
+    
+    .projects-container a{
+        display: block;
+        width: 100%;
+        height: 150px;
+    }
+
+    .carousel .carousel-inner{
+        width: 90%;
+        height: 90%;
+        margin: 5px 20px;
+    }
+
+    .all-projects{
+        width: 95%;
+        height: 40%;
+        margin: 30px auto;
+    }
+
+    .all-projects .carousel .carousel-inner .carousel-item{
+        width: 80%;
+        height: 80%;
+    }
+
+    .projects-intro .highlight-projects-head{
+        letter-spacing: 10px;
+        font-size: 1.75em;
+        color: rgb(250, 7, 11);
+        text-transform: uppercase;
+        text-shadow: 5px 0 0 rgb(249, 156, 156);
+    }
+    .projects-intro .highlight-projects-text{
+        color: rgb(250, 7, 11);
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+
+    .projects-intro h2{
+        font-weight: 700;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
 }
